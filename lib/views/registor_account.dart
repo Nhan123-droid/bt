@@ -239,7 +239,10 @@ class _RegistorFormState extends State<RegistorForm> {
           DropdownButtonFormField<String>(
             decoration: InputDecoration(
               hintText: 'Giới tính',
-              prefixIcon: const FaIcon(FontAwesomeIcons.venusMars, size: 20),
+              prefixIcon: const Padding(
+                padding: EdgeInsets.all(12.0),
+                child: FaIcon(FontAwesomeIcons.venusMars, size: 20),
+              ),
               filled: true,
               fillColor: Colors.white,
               contentPadding: const EdgeInsets.symmetric(
